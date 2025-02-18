@@ -53,11 +53,40 @@ const users = [
     },
 ] //array inside object
 users[1].email //accesing 1st value (it is object) so we can use . (dot)
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); //its output form in array datatype
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser)); //its output form in array datatype
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); //for chacking this property is exist or not
-console.log(tinderUser.hasOwnProperty('isLogged'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); //for chacking this property is exist or not
+// console.log(tinderUser.hasOwnProperty('isLogged'));
+
+// ++++++++++++++++++++++++++++++++ object de-structure and JSON API +++++++++++++++++++++++++++++++++++++++++
+
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+} //its a object
+
+// course.courseInstructor //printing a any value but for clean code we dont use this method to print because in this we have to print repedaly
+
+const {courseInstructor} = course
+const {courseInstructor: instructor} = course //we change name also
+
+// console.log(courseInstructor);
+console.log(instructor);
+
+// JSON structure
+// {
+    // "name": "Sam",
+    // "coursename": "js in hindi",
+    // "prise": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
