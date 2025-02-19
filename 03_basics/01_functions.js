@@ -48,6 +48,43 @@ function loginUserMessage(username = "sam"){
     return`${username} just logged in`
 }  //using $ sign we write variable name
 
-console.log(loginUserMessage("sammy"));//executing value
+// console.log(loginUserMessage("sammy"));//executing value
 // console.log(loginUserMessage(""));
 // console.log(loginUserMessage());
+
+// function calculateCartPrice(...num1){
+//     return num1
+// } //...num1 means rest it give output in array
+
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+}
+
+// console.log(calculateCartPrice(200, 400, 500, 700));
+
+const user = {
+    username: "sammy",
+    price: 199
+    // prices: 199
+}
+
+function handleObject(anyobject){
+    console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handleObject(user)
+handleObject({
+    username: "sammy",
+    price: 399
+}) //this is for object
+
+//for array
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+//2nd method
+console.log(returnSecondValue([200, 400, 100, 600]));
